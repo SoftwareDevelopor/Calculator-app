@@ -1,0 +1,39 @@
+@media only screen and (min-width:200px) and (max-width:575px){
+    .main h4{
+        font-size: 40px;
+    }
+    .main button{
+        flex-basis: 20%;
+    }
+    .scientificCalc .arrowbtn{
+        width: 24px;
+        height: 100%;
+    }
+    .arrowbtn button{
+        height: 100%;
+        width: 100%;
+    }
+    .main .scientificCalc{
+        left: -94%;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:990px){
+    .main h4{
+        font-size: 40px;
+    }
+    .main button{
+        flex-basis: 20%;
+    }
+    .scientificCalc .arrowbtn{
+        width: 24px;
+        height: 100%;
+    }
+    .arrowbtn button{
+        height: 100%;
+        width: 100%;
+    }
+    .main .scientificCalc{
+        left: -96%;
+    }
+}

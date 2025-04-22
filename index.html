@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    
+</head>
+
+<body>
+    <div class="main">
+        <h4>Calculator App</h4>
+        <form id="FormInputs">
+            <input type="number" name="" id="tempResultStorage" disabled />
+            <input type="text" id="expressionInput" placeholder="Enter expression to calculate" value="" disabled />
+        </form>
+        <hr style="border: 0.1px solid #BDBCBC; margin-top: 15px;" />
+
+        <div class="scientificCalc">
+            <button type="button" onclick="appendToInput('sin()')">sin</button>
+            <button type="button" onclick="appendToInput('cos()')">cos</button>
+            <button type="button" onclick="appendToInput('tan()')">tan</button>
+            <button type="button" onclick="appendToInput('x!')">x!</button>
+            <button type="button" onclick="appendToInput('Math.sqrt()')">&Sqrt;</button>
+            <button type="button" onclick="appendToInput('**2')">x^2</button>
+            <button type="button" onclick="appendToInput('Math.E')">e</button>
+            <button type="button" onclick="appendToInput('Math.PI')">&pi;</button>
+            <button type="button" onclick="appendToInput('Math.log10()')">logbase10</button>
+            <button type="button" onclick="appendToInput('Math.log()')">ln</button>
+            <button type="button" onclick="appendToInput('Math.exp()')">e^x</button>
+            <button type="button" onclick="appendToInput('10^x')">10^x</button>
+            <button type="button" onclick="integration()">&int;</button>
+            <button type="button" onclick="derivative()">d/dx</button>
+            <button type="button" onclick="equation()">equation</button>
+            <div class="arrowbtn">
+                <button type="button">
+                    <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="cancelStorebtns">
+            <button type="button" onclick="cancelInput()">AC</button>
+            <button type="button" onclick="deleteItem()">
+                <i class="fa-solid fa-delete-left" style="color:black;"></i>
+            </button>
+            
+        </div>
+        <div class="Inputbtns">
+
+            <button type="button" onclick="appendToInput('%')">%</button>
+            <button type="button" onclick="appendToInput('-')">-</button>
+            <button type="button" onclick="appendToInput('+')">+</button>
+            <button type="button" onclick="appendToInput('*')">&times;</button>
+            <button type="button" onclick="appendToInput('/')">/</button>
+            <button type="button" onclick="appendToInput('1')">1</button>
+            <button type="button" onclick="appendToInput('2')">2</button>
+            <button type="button" onclick="calculate()">=</button>
+            <button type="button" onclick="appendToInput('3')">3</button>
+            <button type="button" onclick="appendToInput('4')">4</button>
+            <button type="button" onclick="appendToInput('5')">5</button>
+            <button type="button" onclick="appendToInput('6')">6</button>
+            <button type="button" onclick="appendToInput('7')">7</button>
+            <button type="button" onclick="appendToInput('8')">8</button>
+            <button type="button" onclick="appendToInput('9')">9</button>
+            <button type="button" onclick="appendToInput('0')">0</button>
+            <button type="button" onclick="appendToInput('x')">x</button>
+            <button type="button" onclick="appendToInput('y')">y</button>
+        </div>
+
+    </div>
+</body>
+<script src="app.js"></script>
+<script src="integrate.js"></script>
+<script src="derivative.js"></script>
+</html>
