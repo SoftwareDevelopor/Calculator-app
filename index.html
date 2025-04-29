@@ -23,21 +23,19 @@
         <hr style="border: 0.1px solid #BDBCBC; margin-top: 15px;" />
 
         <div class="scientificCalc">
-            <button type="button" onclick="appendToInput('sin()')">sin</button>
-            <button type="button" onclick="appendToInput('cos()')">cos</button>
-            <button type="button" onclick="appendToInput('tan()')">tan</button>
-            <button type="button" onclick="appendToInput('x!')">x!</button>
-            <button type="button" onclick="appendToInput('Math.sqrt()')">&Sqrt;</button>
-            <button type="button" onclick="appendToInput('**2')">x^2</button>
-            <button type="button" onclick="appendToInput('Math.E')">e</button>
-            <button type="button" onclick="appendToInput('Math.PI')">&pi;</button>
-            <button type="button" onclick="appendToInput('Math.log10()')">logbase10</button>
-            <button type="button" onclick="appendToInput('Math.log()')">ln</button>
-            <button type="button" onclick="appendToInput('Math.exp()')">e^x</button>
-            <button type="button" onclick="appendToInput('10^x')">10^x</button>
+            <button type="button" onclick="sin()">sin</button>
+            <button type="button" onclick="cos()">cos</button>
+            <button type="button" onclick="tan()">tan</button>
+            <button type="button" onclick="xfactorial()">x!</button>
+            <button type="button" onclick="sqrt()">&Sqrt;</button>
+            <button type="button" onclick="pow()">x^y</button>
+            <button type="button" onclick="e()">e</button>
+            <button type="button" onclick="pi()">&pi;</button>
+            <button type="button" onclick="log10()">logbase10</button>
+            <button type="button" onclick="ln()">ln</button>
+            <button type="button" onclick="exp()">e^x</button>
             <button type="button" onclick="integration()">&int;</button>
             <button type="button" onclick="derivative()">d/dx</button>
-            <button type="button" onclick="equation()">equation</button>
             <div class="arrowbtn">
                 <button type="button">
                     <i class="fa-solid fa-arrow-right" style="color: #000000;"></i>
@@ -57,7 +55,7 @@
             <button type="button" onclick="appendToInput('%')">%</button>
             <button type="button" onclick="appendToInput('-')">-</button>
             <button type="button" onclick="appendToInput('+')">+</button>
-            <button type="button" onclick="appendToInput('*')">&times;</button>
+            <button type="button" onclick="appendToInput('*')">*</button>
             <button type="button" onclick="appendToInput('/')">/</button>
             <button type="button" onclick="appendToInput('1')">1</button>
             <button type="button" onclick="appendToInput('2')">2</button>
@@ -77,6 +75,7 @@
     </div>
 </body>
 <script src="app.js"></script>
+<script src="equation.js"></script>
 <script src="integrate.js"></script>
 <script src="derivative.js"></script>
 </html>
